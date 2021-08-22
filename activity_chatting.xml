@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorIndivateTab"
+    android:orientation="vertical"
+    tools:context=".chat.ChattingActivity">
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Chat"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:textColor="#ffff"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editWriteMessage"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toStartOf="@id/btnSend"
+        android:background="@drawable/edittext_boder"
+        android:drawablePadding="20dp"
+        android:inputType="textLongMessage"
+        android:maxLines="1"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColorHint="#aeafaf"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:id="@+id/btnSend"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000"
+        android:padding="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_send" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/btnSend"
+        android:background="@color/grey_200" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        android:layout_below="@+id/toolbar"
+        tools:listitem="@layout/item_message">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AdminLogin">
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="410dp"
+        android:layout_height="259dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imagebc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="187dp"
+        android:layout_height="101dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="GUARDIUM"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="7dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="152dp"
+        android:layout_height="64dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Protect your assets with us"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintVertical_bias="0.2"
+        tools:layout_editor_absoluteX="127dp"
+        app:layout_constraintBottom_toTopOf="parent"
+        tools:layout_editor_absoluteY="84dp"
+        app:layout_constraintTop_toBottomOf="@id/text3" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/bgconstraint"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".78"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <EditText
+            android:id="@+id/id1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_bg"
+            android:hint="Employee ID"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.193"
+            app:layout_constraintWidth_percent=".8" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:password="true"
+            android:paddingLeft="20dp"
+            android:background="@drawable/login_bg"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias=".5"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id1"
+            app:layout_constraintWidth_percent=".8" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="225dp"
+            android:layout_height="58dp"
+            android:background="@drawable/button_bg"
+            android:text="Login"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password2"
+            app:layout_constraintVertical_bias="0.424"
+            app:layout_constraintWidth_percent=".8" />
+
+        <TextView
+            android:id="@+id/register2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Register"
+            app:layout_constraintEnd_toEndOf="@id/password2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="5dp"
+            app:layout_constraintTop_toBottomOf="@id/password2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Forget Password"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/forgot1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/password2"
+            app:layout_constraintHorizontal_bias="0.24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password2"
+            app:layout_constraintVertical_bias="0.003" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

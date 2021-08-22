@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account_activity">
+
+<de.hdodenhof.circleimageview.CircleImageView
+    android:layout_width="@dimen/_120sdp"
+    android:layout_height="@dimen/_120sdp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:id="@+id/dp"
+    android:src="@drawable/profile1"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:layout_below="@id/dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/name"
+      android:text=" Email Address"
+      android:textSize="@dimen/_16sdp"
+      android:textStyle="bold"
+    android:layout_marginTop="@dimen/_10sdp"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:layout_below="@id/name"
+    android:id="@+id/email1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/_14sdp"
+    android:text=" Phone Number"
+    android:textStyle="bold"
+    android:textSize="@dimen/_16sdp"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+    android:layout_below="@id/email1"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="@dimen/_14sdp"
+    android:id="@+id/phone"
+    android:text="password"
+    android:textSize="@dimen/_16sdp"
+    android:textStyle="bold"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:lines="2"
+    android:maxLines="3"
+    style="@style/sectionHeader"
+    android:text="Notifications"
+    android:layout_below="@id/phone"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:id="@+id/notify"
+    android:textStyle="bold"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:lines="2"
+    android:maxLines="3"
+    style="@style/sectionHeader"
+    android:text="Edit profile photo"
+    android:layout_below="@id/notify"
+    android:id="@+id/editphoto"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:textStyle="bold"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_height="wrap_content"
+     android:lines="2"
+  android:maxLines="3"
+  style="@style/sectionHeader"
+  android:gravity="fill"
+  android:text="Edit Profile"
+    tools:ignore="RtlCompat"
+    android:layout_below="@id/editphoto"
+    android:id="@+id/editprofile"
+    android:textStyle="bold"
+    android:layout_marginTop="@dimen/_20sdp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/_30sdp"
+  android:lines="2"
+  android:maxLines="3"
+  style="@style/sectionHeader"
+  android:layout_below="@id/editprofile"
+  android:layout_marginTop="@dimen/_20sdp"
+  android:text="Reset Password"
+  android:textStyle="bold"
+  android:id="@+id/pswrdchange"/>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+  android:layout_marginLeft="@dimen/_30sdp"
+  android:lines="2"
+  android:maxLines="3"
+  style="@style/sectionHeader"
+  android:layout_below="@id/pswrdchange"
+  android:layout_marginTop="@dimen/_20sdp"
+  android:text="logout"
+  android:textStyle="bold"
+  android:id="@+id/logout"/>
+
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/drawer_menu"
+        tools:ignore="ObsoleteLayoutParam" />
+</RelativeLayout>
